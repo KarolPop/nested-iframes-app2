@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <body style="text-align: center; background-color: blue; color: #333;margin: 0; padding: 0;position: absolute;width: 100%;height: 100%;">
+	
+		<p id="index">Loading.......</p>
+		<iframe id="iframe" style="border: 0; position: absolute; width: 100%; height: 100%; left: 0; top: 0">
+			<p>Iframe 1</p>
+		</iframe>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function(){
+					var iframe = document.getElementById('iframe');
+					//iframe.setAttribute('src', 'iframe2.html');
+					setTimeout(function() { iframe.setAttribute('src', 'iframe2.html'), 3000});
+					//iframe.style.display = 'block';
+					iframe.style.display = 'block';
+			});
+		</script>
+	</body>
+</html>
